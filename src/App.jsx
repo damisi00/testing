@@ -20,7 +20,7 @@ function App() {
       {/* <Routes>
         <Route path="/va1" element={<VaModal />} />
       </Routes> */}
-      <LayoutModal />
+        <LayoutModal />
          <VaModal1 />
       {/* </LayoutModal> */}
     </div>
