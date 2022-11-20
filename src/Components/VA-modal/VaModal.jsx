@@ -1,34 +1,45 @@
-import React from 'react'
-import './Va1.css';
+// import React, { useState } from 'react'
+// import './App.scss';
+import style from './Va1.module.scss';
 import CloseButton from '../../assets/close-square.png';
-import TalkingMan from '../../assets/talking.png';
-// import MobileNav from './MobileNav';
-// import TaskSideBar from './TaskSideBar';
+
+import MobileNav from './MobileNav';
+
+
 
 const VaModal = (props) => {
-    const fName = 'Michael';
+// const [showModal, setShowModal] = useState(false);
+    
+//   const handleShow = () => setShowModal(true);
+//   const handleClose = () =>{
+//       // e.preventDefault();
+//            setShowModal(false);
+//   }
+    // const fName = 'Michael';
 
   return (
     <div>
-        <main className='task-layout'>
-            {/* <MobileNav /> works for top bar on mobile & desktop*/}
-
-            
-            {/* <TaskSideBar /> */}
-            <section className='va-main' {...props}>
-                <a href='/' className='cancel-button' onClick={props.onClose} >
+        <main className={style.body_modal}>
+        <MobileNav />
+            {/* <button id='create_task' onClick={handleShow}>Create Task</button> */}
+            {/* Modal Container */}
+            <section className={style.va_main} {...props}>
+            {/* <section className={style.va_main} {...props} show={showModal} onHide={handleClose} centered> */}
+                <a href='/' className={style.cancel_button}>
+                {/* <a href='/' className={style.cancel_button} onClick={props.onClose} closeButton> */}
                     <img src={CloseButton} alt='close button' />
                 </a>
-                <div className='calling-img'>
-                    <img src={TalkingMan} alt='talking man' />
+                <div className={style.calling_img}>
+                    <img src={props.imgName} alt='' />
                 </div>
-                <div className='talking-text'>
-                    <h4>Hello, my name is {fName} and I am your virtual assistant.</h4>
-                    <p>I would make sure you do not forget your tasks by giving you a call.</p>
+                <div className={style.talking_text}>
+                    <h4>{props.text}</h4>
+                    <p>{props.subtext}</p>
                 </div>
-                <div className='talking-btns'>
-                    <button className='remind-me'>Remind me</button>
-                    <button className='no-thanks'>No, Thanks</button>
+                <div className={style.talking_btns}>
+                    <button>{props.btn1}</button>
+                    {/* <button onClick={handleClose}>{props.btn2}</button> */}
+                    <button>{props.btn2}</button>
                 </div>
             </section>
         </main>

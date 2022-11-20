@@ -1,4 +1,4 @@
-.nav-fluid{
+.nav_fluid{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,7 +7,7 @@
     background-color: #f6fafb;
 }
 
-.nav-fluid a{
+.nav_fluid a{
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -20,7 +20,7 @@
     line-height: 160%;
 }
 
-.thick-border{
+.thick_border{
      border-bottom:4px solid #714dd9;
      border-radius: 2px;
 }
@@ -37,18 +37,22 @@
     .mobile_nav{
         display: none;
     }
+    .heading{
+    background-color:transparent;
+    }
 
     .topBar_destp{
         display: flex;
         justify-content: space-between;
         padding: 0.75rem 2.5rem;
-        background-color: #fff;
+        // background-color: #fff;
+        background: linear-gradient(118.85deg, #808080 -6.3%, rgba(128, 128, 128, 0.852756) -6.3%, rgba(128, 128, 128, 0.360016) -0.46%, rgba(128,128,128, 0) 98.73%);
         color: #333;
         margin-left:  15.625rem;
         
     }
 
-    .thick-border{
+    .thick_border{
         padding-bottom: 1.125rem;
     }
 

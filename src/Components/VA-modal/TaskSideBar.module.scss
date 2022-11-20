@@ -2,14 +2,15 @@
     position: fixed;
     left: 0;
     top: 0;
-    height: 100vh;
-    background-color: #fff;
+    min-height: 100vh;
+    // background-color: #fff;
+    background: linear-gradient(118.85deg, #808080 -6.3%, rgba(128, 128, 128, 0.852756) -6.3%, rgba(128, 128, 128, 0.360016) -0.46%, rgba(128,128,128, 0) 98.73%);
     border-right:  1px solid #e9f3f5;
     width: 15.625rem;
     padding: 1.5rem 0;
 }
 
-.sidebar-logo{
+.sidebar_logo{
     padding-left: 2.5rem;
 }
 
@@ -23,12 +24,12 @@
     margin:2.5rem auto;
     display: flex;
     text-decoration: none;
-    color: #333;
+    color: #714dd9;
     font-size: 1rem;
     line-height: 120%;
 }
 
-@media (max-width: 992px){
+@media (max-width: 769px){
     .side_bar_wrapper{
         display: none;
     }

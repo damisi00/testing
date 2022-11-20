@@ -1,5 +1,5 @@
 import React from 'react'
-import './MobileNav.css';
+import style from './MobileNav.module.scss';
 import Logo from '../../assets/logo.png';
 import Hamburger from '../../assets/hamburger.png';
 import ArrowDown from '../../assets/arrow-down.png';
@@ -8,25 +8,25 @@ import ClientImg from '../../assets/Ellipse 125.png';
 const MobileNav = () => {
   return (
     <>
-        <div className='mobile_nav'>
-            <nav className='nav-fluid'>
-                <div className='tick-logo'>
+        <div className={style.mobile_nav}>
+            <nav className={style.nav_fluid}>
+                <div className={style.tick_logo}>
                     <img src={Logo} alt='logo' />
                 </div>
                 <a href='/'>
                     <img src={Hamburger} alt='menu' />
                 </a>
             </nav>
-            <header className='heading'>
-                <h5><span className='thick-border'>New T</span>ask</h5>
+            <header className={style.heading}>
+                <h5><span className={style.thick_border}>New T</span>ask</h5>
             </header>
         </div>
 
-        <div className='topBar_destp'>
-            <header className='heading'>
-                <h5><span className='thick-border'>New T</span>ask</h5>
+        <div className={style.topBar_destp}>
+            <header className={style.heading}>
+                <h5><span className={style.thick_border}>New T</span>ask</h5>
             </header>
-            <div className='client__profile'>
+            <div className={style.client__profile}>
                 <img src={ClientImg} alt='' />
                 <p>Joseph A.</p>
                 <img src={ArrowDown} alt='dropdown menu' />
